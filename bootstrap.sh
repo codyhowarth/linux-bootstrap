@@ -14,6 +14,9 @@ sudo apt-get -y install shellcheck
 sudo apt-get -y install nodejs
 sudo apt-get -y install npm
 
+# Symlink node to nodejs
+sudo ln -s /usr/bin/nodejs /usr/bin/node
+
 # Create git directory
 mkdir ~/git
 
@@ -58,7 +61,8 @@ echo "Done."
 # Install dropbox
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 
-echo -e "\n\n Setup complete...changing shell over to zsh. Please restart.\nDon't forget to run ~/.dropbox-dist/dropboxd !"
+echo -e "\n\n Setup complete...changing shell over to zsh. Please restart.\n
+Don't forget to run ~/.dropbox-dist/dropboxd ! (If you want dropbox)"
 
 # Change over to zsh
 chsh -s /bin/zsh

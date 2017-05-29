@@ -47,6 +47,7 @@ sh install_powerline_fonts.sh
 git config --global user.name "Cody Howarth"
 git config --global user.email "codyhowarth@gmail.com"
 git config --global core.editor "vim"
+git config --global push.default matching
 
 # Install oh my zsh
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh

@@ -6,7 +6,7 @@ sudo systemctl disable apt-daily.timer   # disable timer run
 # Standard installs
 sudo apt-get update
 # Disable upgrade for now since it's super slow
-sudo apt-get -y upgrade
+# sudo apt-get -y upgrade
 sudo apt-get -y install curl
 sudo apt-get -y install wget
 sudo apt-get -y install git

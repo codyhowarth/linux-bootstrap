@@ -1,7 +1,10 @@
 #!/bin/bash
 
-sudo systemctl disable apt-daily.service # disable run when system boot
-sudo systemctl disable apt-daily.timer   # disable timer run
+# Stop and disable auto updates so they don't interfere
+sudo systemctl stop apt-daily.timer
+sudo systemctl stop apt-daily.service
+sudo systemctl disable apt-daily.service
+sudo systemctl disable apt-daily.timer
 
 # Standard installs
 sudo apt-get update

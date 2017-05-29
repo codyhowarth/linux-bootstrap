@@ -1,5 +1,8 @@
 #!/bin/bash
 
+sudo systemctl disable apt-daily.service # disable run when system boot
+sudo systemctl disable apt-daily.timer   # disable timer run
+
 # Standard installs
 sudo apt-get update
 # Disable upgrade for now since it's super slow

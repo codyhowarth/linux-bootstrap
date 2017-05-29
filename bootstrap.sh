@@ -3,6 +3,13 @@
 # Stop and disable auto updates so they don't interfere
 sudo systemctl stop apt-daily.timer
 sudo systemctl stop apt-daily.service
+
+# wait until `apt-get updated` has been killed
+while ! (systemctl list-units --all apt-daily.service | fgrep -q dead)
+do
+  sleep 1;
+done
+
 sudo systemctl disable apt-daily.service
 sudo systemctl disable apt-daily.timer
 

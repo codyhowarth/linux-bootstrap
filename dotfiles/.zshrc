@@ -85,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias e="emacs"
-alias up="sudo apt-get update && apt-get upgrade"
+alias up="sudo apt-get update && sudo apt-get upgrade -y"
 alias c="clear"
 
 alias ld="ls -ld */"   # List in long format, only directories

@@ -26,6 +26,7 @@ sudo apt-get -y install silversearcher-ag
 sudo apt-get -y install shellcheck
 sudo apt-get -y install nodejs
 sudo apt-get -y install npm
+sudo apt-get -y install imwheel
 
 # Symlink node to nodejs
 sudo ln -s /usr/bin/nodejs /usr/bin/node
@@ -74,6 +75,9 @@ echo "Done."
 
 # Install dropbox
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+
+# Set scroll speed faster
+sudo killall imwheel && imwheel -b "4 5"
 
 echo -e "\n\n Setup complete...changing shell over to zsh. Please restart.\n
 Don't forget to run ~/.dropbox-dist/dropboxd ! (If you want dropbox)"

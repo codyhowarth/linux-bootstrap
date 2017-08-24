@@ -1,4 +1,3 @@
-colorscheme molokai
 syntax enable
 
 set tabstop=4 " visual spaces per tab

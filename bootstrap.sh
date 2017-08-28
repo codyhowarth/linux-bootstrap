@@ -48,6 +48,8 @@ sh install_intellij.sh
 
 # sh install_pycharm.sh
 
+sh install_vscode.sh
+
 sh install_atom.sh
 
 sh install_chrome.sh

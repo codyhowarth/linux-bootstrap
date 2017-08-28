@@ -87,6 +87,8 @@ source $ZSH/oh-my-zsh.sh
 alias e="emacs"
 alias up="sudo apt-get update && sudo apt-get upgrade -y"
 alias c="clear"
+alias reboot="sudo reboot"
+alias shutdown="sudo shutdown -h now"
 
 alias ld="ls -ld */"   # List in long format, only directories
 alias ..="cd .."

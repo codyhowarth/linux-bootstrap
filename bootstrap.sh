@@ -46,7 +46,7 @@ sh install_java.sh
 # a newer version
 sh install_intellij.sh
 
-# sh install_pycharm.sh
+sh install_pycharm.sh
 
 sh install_vscode.sh
 

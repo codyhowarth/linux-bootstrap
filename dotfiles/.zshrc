@@ -85,7 +85,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias e="emacs"
-alias up="sudo apt-get update && sudo apt-get upgrade -y"
+alias up="sudo apt-get update && sudo apt-get upgrade -y && sudo snap refresh"
 alias c="clear"
 alias reboot="sudo reboot"
 alias shutdown="sudo shutdown -h now"

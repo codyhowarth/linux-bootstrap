@@ -89,6 +89,7 @@ alias up="sudo apt-get update && sudo apt-get upgrade -y && sudo snap refresh"
 alias c="clear"
 alias reboot="sudo reboot"
 alias shutdown="sudo shutdown -h now"
+alias prune-local="git fetch --prune && git branch --merged master --no-color | grep -v '^[ *]*master$' | xargs git branch -d"
 
 alias ld="ls -ld */"   # List in long format, only directories
 alias ..="cd .."

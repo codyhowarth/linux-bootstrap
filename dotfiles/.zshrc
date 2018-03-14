@@ -89,7 +89,10 @@ alias up="sudo apt-get update && sudo apt-get upgrade -y && sudo snap refresh"
 alias c="clear"
 alias reboot="sudo reboot"
 alias shutdown="sudo shutdown -h now"
+alias subl="subl -a"
 alias prune-local="git fetch --prune && git branch --merged master --no-color | grep -v '^[ *]*master$' | xargs git branch -d"
+alias open="xdg-open"
+
 
 alias ld="ls -ld */"   # List in long format, only directories
 alias ..="cd .."
@@ -196,3 +199,11 @@ export HISTFILESIZE="${HISTSIZE}";
 export SAVEHIST="${HISTSIZE}";
 # Omit duplicates and commands that begin with a space from history.
 export HISTCONTROL='ignoreboth';
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='find .'
+export FZF_CTRL_T_COMMAND='find .'

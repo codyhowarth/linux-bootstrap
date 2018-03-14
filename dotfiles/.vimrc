@@ -50,10 +50,20 @@ Plug 'chrisbra/NrrwRgn'
 "Plug 'w0rp/ale'
 Plug 'valloric/youcompleteme'
 Plug 'ctrlpvim/ctrlp.vim'
+let g:ctrlp_match_window = 'results:200' " overcome limit imposed by max height
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g <MY DEFAULT PATH>'
+let g:ctrlp_working_path_mode = 0
 Plug 'vim-syntastic/syntastic'
 Plug 'scrooloose/nerdcommenter'
 Plug 'bling/vim-airline'
 Plug 'lervag/vimtex'
+" Setup leader and localleader
+let mapleader = "-"
+let maplocalleader = "\\"
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+" Install and set fzf plugin
+
 " Optional
 Plug 'honza/vim-snippets'
 
